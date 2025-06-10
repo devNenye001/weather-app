@@ -3,11 +3,11 @@
 const button = document.querySelector(".btn");
 const cityInput = document.querySelector(".user-input");
 const card = document.querySelector(".weather-img");
-const apiKey = "b808b96ed760eeb76ca799150961a749"; // Replace with your real API key
+const apiKey = "b808b96ed760eeb76ca799150961a749"; 
 
 button.addEventListener("click", async event => {
   event.preventDefault();
-  const city = cityInput.value; // ✅ fixed the capital 'V'
+  const city = cityInput.value;
 
   if (city) {
     try {
@@ -36,7 +36,7 @@ async function getWeatherData(city) {
   return data;
 }
 
-// ✅ Display weather info (you can customize this further)
+// ✅ Display weather info
 function displayWeatherInfo(data) {
   // Clear any previous content
   card.innerHTML = "";
