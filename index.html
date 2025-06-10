@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/icons/favicon.png" type="image/x-icon" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav>
+      <div class="weather-logo">
+        <img src="/icons/weather logo.png" alt="weather logo" />
+        <h1>Weather App</h1>
+      </div>
+
+      <!-- input div -->
+      <form class="input-div">
+        <img src="/icons/search.png" alt="search logo" />
+        <input type="text" placeholder="Enugu" class="user-input"/>
+        <button class="btn">Search</button>
+      </form>
+    </nav>
+
+    <main>
+      <!-- the weather forcast -->
+      <div class="weather-img" style="display: none;">
+        <!-- left info -->
+        <div class="right">
+          <div class="name-humdity">
+            <h1 class="city-name"></h1>
+
+            <div class="humidity-div">
+              <img src="/icons/humidity.png" alt="humidity logo" style="display: none;" />
+              <p class="humidity"></p>
+            </div>
+          </div>
+          <p class="temperature"></p>
+        </div>
+
+        <!-- right info -->
+        <div class="left">
+          <img src="" alt="snow cloud" style="display: none;" />
+          <p class="decDisplay"></p>
+        </div>
+
+        <p class="error-message"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>@devNenye🎮🍔</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
